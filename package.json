@@ -1,0 +1,29 @@
+{
+	"name": "pi-ask-user",
+	"version": "1.0.0",
+	"description": "Interactive questions for Pi: the model asks through an ask_user dialog instead of prose, and the user can always type their own answer.",
+	"keywords": ["pi-package", "pi", "ask-user", "questions", "dialog", "extension"],
+	"license": "GPL-3.0-only",
+	"scripts": {
+		"test": "node test/run.mjs"
+	},
+	"pi": {
+		"extensions": ["./ask-user.ts"]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": "*",
+		"@earendil-works/pi-tui": "*",
+		"typebox": "*"
+	},
+	"peerDependenciesMeta": {
+		"@earendil-works/pi-coding-agent": {
+			"optional": true
+		},
+		"@earendil-works/pi-tui": {
+			"optional": true
+		},
+		"typebox": {
+			"optional": true
+		}
+	}
+}
